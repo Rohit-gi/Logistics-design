@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+} */
+
+header {
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.trailer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trailer {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px 3px 0 0 #C7C7C7; 
+}
+
+.trailer-image {
+    height: 238px;  /* Fixed height */
+    width: 100%;    /* Responsive width */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+
+}
+
+.trailer-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.75); /* Increased opacity for better readability */
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    border-radius: 12px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #FFCC00;
+    color: black;
+    width: 240px;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+button::after {
+    content: '>';
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.truck-name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.custom-color-heading {
+    color: #FFCC00;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin: 2px 0;
+    font-size: 16px;
+}
